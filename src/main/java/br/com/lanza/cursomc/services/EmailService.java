@@ -11,11 +11,11 @@ public interface EmailService {
 
 	void sendOrderConfirmationEmail(Pedido obj);
 
-	void sendEmail(SimpleMailMessage msg);
+	void sendEmail(SimpleMailMessage message);
 
 	void sendOrderConfirmationHtmlEmail(Pedido obj);
 
-	void sendHtmlEmail(MimeMessage msg);
+	void sendHtmlEmail(MimeMessage message);
 
 	void sendNewPasswordEmail(Cliente cliente, String newPass);
 }

@@ -20,16 +20,16 @@ public class SmtpEmailService extends AbstractEmailService {
 	private static final Logger LOG = LoggerFactory.getLogger(SmtpEmailService.class);
 
 	@Override
-	public void sendEmail(SimpleMailMessage msg) {
+	public void sendEmail(SimpleMailMessage message) {
 		LOG.info("Enviando e-mail.");
-		mailSender.send(msg);
+		mailSender.send(message);
 		LOG.info("E-mail enviado.");
 	}
 
 	@Override
-	public void sendHtmlEmail(MimeMessage msg) {
+	public void sendHtmlEmail(MimeMessage message) {
 		LOG.info("Enviando e-mail.");
-		javaMailSender.send(msg);
+		javaMailSender.send(message);
 		LOG.info("E-mail enviado.");
 	}
 
